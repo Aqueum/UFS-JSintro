@@ -1,0 +1,10 @@
+# IntelliJ project files
+.idea/
+out
+gen
+
+# Raw art files
+*.afdesign
+
+# Confidential
+background/
