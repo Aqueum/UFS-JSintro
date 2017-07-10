@@ -1,10 +1,18 @@
 # UFS-JSintro
 Notes from udacity [UD803 Intro to JavaScript](https://www.udacity.com/course/intro-to-javascript--ud803)
 
-## Values
+## Primative Data Types
+- strings
+- numbers (NaN is not a number, but it's type is number)
+- booleans
 - null is nothing
 - undefined is the absence of anything
-- NaN is not a number
+
+### typeof
+- typeof "hello" // returns "string"
+- typeof true // returns "boolean"
+- typeof [1, 2, 3] // returns "object" (Arrays are a type of object)
+- typeof function hello() { } // returns "function"
 
 ## Boolean Operators
 - &&    = AND
@@ -79,3 +87,24 @@ Check the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaS
 - .pop() -> remove & return last element
 - .splice(change index, # of elements to delete, [add somethings,])
 - .forEach(element, index, array) {} -> lets you loop over elements
+- y = x.map(function(element) {}) -> copies x, performing function on elements
+
+## Objects
+`var object = {};`
+
+### Object literal notation
+`var object = {
+   key: value,
+   k2: v2
+ };`
+ 
+ Keys & values separated by colons, pairs separated by commas (& often given new lines), all wrapped in curly braces {} 
+ 
+ For a method (as opposed to property) the value is a function.
+ 
+ Can access with bracket notation: `objecy["key"]` or dot notation `object.key`
+ 
+ Can't start a property name with number & it can't include spaces or hyphens - use camelCase.
+ 
+ Better not to put quotes around property names as it can mask errors.
+ 

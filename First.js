@@ -147,3 +147,12 @@ test.forEach(function(x, i, a) {
 });
 
 console.log(test);
+
+var sister = {
+    name: "Sarah",
+    age: 23,
+    parents: [ "alice", "andy" ],
+    siblings: ["julia"],
+    favoriteColor: "purple",
+    pets: true
+};
