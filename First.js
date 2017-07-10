@@ -82,23 +82,16 @@ while (start < 10) { // when to stop
 }
 
 // For
-for (var i = 0; i < 6; i = i + 1) {
-    console.log("Printing out i = " + i);
+for (var j = 0; j < 6; j = j + 1) {
+    console.log("Printing out j = " + j);
 }
-
-// Increment/decrement
-x++ or ++x // same as x = x + 1
-x-- or --x // same as x = x - 1
-x += 3 // same as x = x + 3
-x -= 6 // same as x = x - 6
-x *= 2 // same as x = x * 2
-x /= 5 // same as x = x / 5
 
 // Functions
 
 function findAverage(x, y) {
-    var answer = (x + y) / 2;
-    return answer;
+    return (x + y) / 2;
 }
 
 var avg = findAverage(5, 9);
+
+console.log(avg);
