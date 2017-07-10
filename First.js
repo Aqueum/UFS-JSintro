@@ -129,3 +129,21 @@ movies(function displayFavorite(movieName) {
 // Arrays
 var donuts = ["glazed", "powdered", "sprinkled"];
 console.log(donuts[0]); // "glazed" is the first element in the `donuts` array
+
+var donuts2 = ["glazed", "chocolate frosted", "Boston creme", "glazed cruller"];
+donuts2.splice(1, 1, "chocolate cruller", "creme de leche"); // removes "chocolate frosted" at index 1 and adds "chocolate cruller" and "creme de leche" starting at index 1
+console.log(donuts2);
+
+// forEach
+var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
+    19, 300, 3775, 299, 36, 209, 148, 169, 299,
+    6, 109, 20, 58, 139, 59, 3, 1, 139
+];
+
+test.forEach(function(x, i, a) {
+    if (x % 3 === 0) {
+        a[i] = x + 100;
+    }
+});
+
+console.log(test);

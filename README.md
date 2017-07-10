@@ -74,3 +74,8 @@ You can write a function within the argument of another function.  Doing so with
 
 ## Array methods
 Check the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- .length -> number of elements
+- .push(x) -> add x as last element
+- .pop() -> remove & return last element
+- .splice(change index, # of elements to delete, [add somethings,])
+- .forEach(element, index, array) {} -> lets you loop over elements
