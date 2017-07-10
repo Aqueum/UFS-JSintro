@@ -60,7 +60,7 @@ FIX: define your functions at the top of the script and variables at the top of 
 - function declaration: 
 `function whatever() {}`
 
-Function expressions use anonymous functions stored in variables.
+Function expressions use named or anonymous functions stored in variables.
 
 Giving the variable name will return the function, the name with parenthesis calls the function.
 
@@ -68,3 +68,9 @@ HOISTING: Function expressions are not hoisted. Only variable declarations are h
 
 ## Callbacks - functions as parameters
 A function that is passed into another function is called a callback.
+
+## Inline functions
+You can write a function within the argument of another function.  Doing so with anonimous functions can save code if you aren't going to use them again.
+
+## Array methods
+Check the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)

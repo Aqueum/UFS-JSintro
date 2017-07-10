@@ -95,3 +95,37 @@ function findAverage(x, y) {
 var avg = findAverage(5, 9);
 
 console.log(avg);
+
+// Callback - function as parameter:
+// function expression catSays
+var catSays = function(max) {
+    var catMessage = "";
+    for (var i = 0; i < max; i++) {
+        catMessage += "meow ";
+    }
+    return catMessage;
+};
+
+// function declaration helloCat accepting a callback
+function helloCat(callbackFunc) {
+    return "Hello " + callbackFunc(3);
+}
+
+// pass in catSays as a callback function
+console.log(helloCat(catSays));
+
+// Inline function:
+// function declaration that takes in two arguments: a function for displaying
+// a message, along with a name of a movie
+function movies(messageFunction, name) {
+    messageFunction(name);
+}
+
+// call the movies function, pass in the function and name of movie
+movies(function displayFavorite(movieName) {
+    console.log("My favorite movie is " + movieName);
+}, "Finding Nemo");
+
+// Arrays
+var donuts = ["glazed", "powdered", "sprinkled"];
+console.log(donuts[0]); // "glazed" is the first element in the `donuts` array
